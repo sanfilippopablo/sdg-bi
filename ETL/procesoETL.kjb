@@ -19,7 +19,7 @@
     <database>tdc_dw</database>
     <port>3306</port>
     <username>root</username>
-    <password>Encrypted </password>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
     <servername />
     <data_tablespace />
     <index_tablespace />
@@ -64,13 +64,13 @@
   </connection>
   <connection>
     <name>conexion_TDCstaging</name>
-    <server>138.197.32.198</server>
+    <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>tdc_staging</database>
     <port>3306</port>
-    <username>sdg</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce10be81abdd</password>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
     <servername />
     <data_tablespace />
     <index_tablespace />
@@ -426,7 +426,8 @@ delete from productos;
 delete from ventas;
 delete from detalle_ventas;
 delete from empleados;
-delete from regiones;</sql>
+delete from regiones;
+delete from stagingventas;</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename />
@@ -500,8 +501,8 @@ delete from clientes;</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>336</xloc>
-      <yloc>176</yloc>
+      <xloc>64</xloc>
+      <yloc>208</yloc>
     </entry>
     <entry>
       <name>Clientes_Al_DW</name>
@@ -536,8 +537,8 @@ delete from clientes;</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>496</xloc>
-      <yloc>176</yloc>
+      <xloc>176</xloc>
+      <yloc>208</yloc>
     </entry>
     <entry>
       <name>Ventas_A_StagingVentas</name>
@@ -572,8 +573,8 @@ delete from clientes;</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>624</xloc>
-      <yloc>176</yloc>
+      <xloc>336</xloc>
+      <yloc>128</yloc>
     </entry>
     <entry>
       <name>Ventas_a_DW</name>
@@ -608,8 +609,8 @@ delete from clientes;</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>768</xloc>
-      <yloc>176</yloc>
+      <xloc>272</xloc>
+      <yloc>208</yloc>
     </entry>
     <entry>
       <name>Éxito</name>
@@ -618,8 +619,8 @@ delete from clientes;</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>896</xloc>
-      <yloc>176</yloc>
+      <xloc>400</xloc>
+      <yloc>208</yloc>
     </entry>
   </entries>
   <hops>
@@ -651,15 +652,6 @@ delete from clientes;</sql>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Fuentes_A_Staging</from>
-      <to>Limpiar_DW</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>Limpiar_DW</from>
       <to>Clientes_Al_DW</to>
       <from_nr>0</from_nr>
@@ -669,7 +661,25 @@ delete from clientes;</sql>
       <unconditional>N</unconditional>
     </hop>
     <hop>
+      <from>Ventas_a_DW</from>
+      <to>Éxito</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
       <from>Clientes_Al_DW</from>
+      <to>Ventas_a_DW</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Fuentes_A_Staging</from>
       <to>Ventas_A_StagingVentas</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -679,16 +689,7 @@ delete from clientes;</sql>
     </hop>
     <hop>
       <from>Ventas_A_StagingVentas</from>
-      <to>Ventas_a_DW</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Ventas_a_DW</from>
-      <to>Éxito</to>
+      <to>Limpiar_DW</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
