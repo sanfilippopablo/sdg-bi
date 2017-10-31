@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>tr_clientes_a_DW</name>
+    <name>tr_regiones_a_DW</name>
     <description />
     <extended_description />
     <trans_version />
@@ -427,10 +427,10 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2017/09/15 00:11:22.519</created_date>
+    <created_date>2017/10/31 16:43:27.860</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2017/09/15 00:11:22.519</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2017/10/31 16:43:27.860</modified_date>
+    <key_for_session_key />
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -551,13 +551,50 @@
   </connection>
   <order>
     <hop>
-      <from>Clientes_Staging</from>
-      <to>Clientes_DW</to>
+      <from>Regiones_staging</from>
+      <to>Regiones_DW</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Clientes_DW</name>
+    <name>Regiones_staging</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>conexion_TDCstaging</connection>
+    <sql>SELECT
+  cod_region
+, region
+, estado
+, ciudad
+FROM regiones
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Regiones_DW</name>
     <type>TableOutput</type>
     <description />
     <distribute>Y</distribute>
@@ -568,8 +605,8 @@
       <schema_name />
     </partitioning>
     <connection>conexion_TDCDW</connection>
-    <schema />
-    <table>clientes</table>
+    <schema>tdc_dw</schema>
+    <table>regiones</table>
     <commit>1000</commit>
     <truncate>N</truncate>
     <ignore_errors>N</ignore_errors>
@@ -586,16 +623,20 @@
     <return_field />
     <fields>
       <field>
-        <column_name>cod_cliente</column_name>
-        <stream_name>cod_cliente</stream_name>
+        <column_name>cod_region</column_name>
+        <stream_name>cod_region</stream_name>
       </field>
       <field>
-        <column_name>nombre</column_name>
-        <stream_name>nombre</stream_name>
+        <column_name>region</column_name>
+        <stream_name>region</stream_name>
       </field>
       <field>
-        <column_name>tipo</column_name>
-        <stream_name>tipo</stream_name>
+        <column_name>estado</column_name>
+        <stream_name>estado</stream_name>
+      </field>
+      <field>
+        <column_name>ciudad</column_name>
+        <stream_name>ciudad</stream_name>
       </field>
     </fields>
     <cluster_schema />
@@ -606,42 +647,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>400</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Clientes_Staging</name>
-    <type>TableInput</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <connection>conexion_TDCstaging</connection>
-    <sql>SELECT cod_cliente , nombre, 'minorista' as tipo FROM minoristas
-union
-SELECT cod_cliente , nombre, 'mayorista' as tipo FROM mayoristas
-</sql>
-    <limit>0</limit>
-    <lookup />
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>144</xloc>
-      <yloc>80</yloc>
+      <xloc>512</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
