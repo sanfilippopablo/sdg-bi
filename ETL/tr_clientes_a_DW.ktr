@@ -568,7 +568,7 @@
       <schema_name />
     </partitioning>
     <connection>conexion_TDCDW</connection>
-    <schema />
+    <schema>tdc_dw</schema>
     <table>clientes</table>
     <commit>1000</commit>
     <truncate>N</truncate>
@@ -592,6 +592,10 @@
       <field>
         <column_name>nombre</column_name>
         <stream_name>nombre</stream_name>
+      </field>
+      <field>
+        <column_name>cod_region</column_name>
+        <stream_name>cod_region</stream_name>
       </field>
       <field>
         <column_name>tipo</column_name>
@@ -623,9 +627,9 @@
       <schema_name />
     </partitioning>
     <connection>conexion_TDCstaging</connection>
-    <sql>SELECT cod_cliente , nombre, 'minorista' as tipo FROM minoristas
+    <sql>SELECT cod_cliente , nombre, cod_region, 'minorista' as tipo FROM minoristas
 union
-SELECT cod_cliente , nombre, 'mayorista' as tipo FROM mayoristas
+SELECT cod_cliente , nombre, cod_region, 'mayorista' as tipo FROM mayoristas
 </sql>
     <limit>0</limit>
     <lookup />

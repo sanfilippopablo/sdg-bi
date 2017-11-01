@@ -696,6 +696,10 @@
         <column_name>genero</column_name>
         <stream_name>GENDER</stream_name>
       </field>
+      <field>
+        <column_name>fecha_nacimiento</column_name>
+        <stream_name>BIRTH_DATE</stream_name>
+      </field>
     </fields>
     <cluster_schema />
     <remotesteps>
@@ -828,7 +832,7 @@ FROM billing_detail
         <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>left</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format>#</format>
         <currency />
@@ -861,6 +865,18 @@ FROM billing_detail
       </field>
       <field>
         <name>EMPLOYMENT_DATE</name>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>mm/dd/yyyy</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>BIRTH_DATE</name>
         <type>Date</type>
         <length>-1</length>
         <precision>-1</precision>

@@ -1,0 +1,1468 @@
+
+OBJECT ideasoft.olap.syntax.CubeDefSTB
+	ATTR
+	STBVersion=1.0
+	_UEncodedVersion=''
+	_Base64EncodedVersion=''
+	name='TDC Ventas'
+	label=''
+	namespace=''
+	blankString='Propio'
+	measuresMode='IGNORE_MODE'
+	lastGeneratedId='13'
+	isTemplate='false'
+	END
+
+	OBJECT ideasoft.olap.syntax.GroupSTB
+		ATTR
+		STBVersion=1.0
+		offset='0'
+		type='Model'
+		title=''
+		description=''
+		author=''
+		theme=''
+		category=''
+		keys=''
+		organization=''
+		sName.DName=''
+		sName.URL='file:/C:/sdg-bi/TDC Ventas.mdl'
+		predSName.DName=''
+		predSName.URL=''
+		modifiedBy=''
+		creationDate='01/11/2017'
+		revisionDate='01/11/2017'
+		modifiedDate='01/11/2017'
+		modifiedTimeStr='1509505733356'
+		domain='o       = IdeaSoft, c   = UY'
+		password=''
+		cubeName='TDC Ventas'
+		currentInputSet='Full'
+		groupClass='ideasoft.olap.mdm.ModelInfo'
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.DimensionDefSTB
+		ATTR
+		STBVersion=1.0
+		id='1'
+		name='Clientes'
+		label='Clientes'
+		description=''
+		blankString='Propio'
+		uniqueLevel='1'
+		visible='true'
+		storageType='6'
+		relatedDimension='-1'
+		forcedRanking='false'
+		hasRestrictions='false'
+		showOthers='true'
+		rankingArgument='0'
+		rankingAscending='false'
+		maxElements='0'
+		rankingType='0'
+		measuresMode='DEFAULT_MODE'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='tipo'
+			label='tipo'
+			key='tipo'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_cliente'
+			label='cliente'
+			key='cod_cliente'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.DateDimensionDefSTB
+		ATTR
+		STBVersion=1.0
+		id='2'
+		name='Tiempo'
+		label='Tiempo'
+		description=''
+		blankString='Propio'
+		uniqueLevel='3'
+		visible='true'
+		storageType='1'
+		relatedDimension='-1'
+		measuresMode='DEFAULT_MODE'
+		dateField='cod_tiempo'
+		initialMonth='1'
+		visible='true'
+		nullDateNodeLabel='Sin Fecha'
+		nullDateNodeLabelAtBeginning='false'
+		yearLabelMode='LAST_MONTH_IN_PERIOD'
+		weekMode='MON_SUN'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDateSTB
+			ATTR
+			STBVersion=1.0
+			name='A\u00f1o'
+			label='A\u00f1o'
+			key='cod_tiempo'
+			labelField='cod_tiempo'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='0'
+			preferredWidth='20'
+			maximumWidth='20'
+			type='LEVEL_YEAR'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDateSTB
+			ATTR
+			STBVersion=1.0
+			name='Trimestre'
+			label='Trimestre'
+			key='cod_tiempo'
+			labelField='cod_tiempo'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='0'
+			preferredWidth='20'
+			maximumWidth='20'
+			type='LEVEL_QUARTER'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDateSTB
+			ATTR
+			STBVersion=1.0
+			name='Mes'
+			label='Mes'
+			key='cod_tiempo'
+			labelField='cod_tiempo'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='0'
+			preferredWidth='20'
+			maximumWidth='20'
+			type='LEVEL_MONTH'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDateSTB
+			ATTR
+			STBVersion=1.0
+			name='D\u00eda'
+			label='D\u00eda'
+			key='cod_tiempo'
+			labelField='cod_tiempo'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='0'
+			preferredWidth='20'
+			maximumWidth='20'
+			type='LEVEL_DAY'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.DimensionDefSTB
+		ATTR
+		STBVersion=1.0
+		id='6'
+		name='Vendedores'
+		label='Vendedores'
+		description=''
+		blankString='Propio'
+		uniqueLevel='1'
+		visible='true'
+		storageType='6'
+		relatedDimension='-1'
+		forcedRanking='false'
+		hasRestrictions='false'
+		showOthers='true'
+		rankingArgument='0'
+		rankingAscending='false'
+		maxElements='0'
+		rankingType='0'
+		measuresMode='DEFAULT_MODE'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='genero'
+			label='Genero'
+			key='genero'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_vendedor'
+			label='Vendedor'
+			key='cod_vendedor'
+			labelField='nombre'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.DimensionDefSTB
+		ATTR
+		STBVersion=1.0
+		id='11'
+		name='Regiones'
+		label='Regiones'
+		description=''
+		blankString='Propio'
+		uniqueLevel='3'
+		visible='true'
+		storageType='6'
+		relatedDimension='-1'
+		forcedRanking='false'
+		hasRestrictions='false'
+		showOthers='true'
+		rankingArgument='0'
+		rankingAscending='false'
+		maxElements='0'
+		rankingType='0'
+		measuresMode='DEFAULT_MODE'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='region'
+			label='Regi\u00f3n'
+			key='region'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='estado'
+			label='Estado'
+			key='estado'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='ciudad'
+			label='Ciudad'
+			key='ciudad'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_region'
+			label='Zipcode'
+			key='cod_region'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.DimensionDefSTB
+		ATTR
+		STBVersion=1.0
+		id='12'
+		name='Productos'
+		label='Productos'
+		description=''
+		blankString='Propio'
+		uniqueLevel='1'
+		visible='true'
+		storageType='6'
+		relatedDimension='-1'
+		forcedRanking='false'
+		hasRestrictions='false'
+		showOthers='true'
+		rankingArgument='0'
+		rankingAscending='false'
+		maxElements='0'
+		rankingType='0'
+		measuresMode='DEFAULT_MODE'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='presentacion'
+			label='Tipo producto'
+			key='presentacion'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionLevelDefSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_producto'
+			label='Producto'
+			key='cod_producto'
+			labelField='descripcion'
+			description=''
+			sortType='NO_SORT'
+			sortDirection='1'
+			sortingField='Valor por defecto'
+			preferredWidth='20'
+			maximumWidth='20'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.MeasureDefSTB
+		ATTR
+		STBVersion=1.1
+		id='3'
+		name='Cantidad productos'
+		visible='true'
+		order='0'
+		fieldName='cantidad'
+		storageType.0='2'
+		scale='0'
+		type='SUM'
+		derivated='false'
+		measureA=''
+		measureB=''
+		description=''
+		nullByDefault='false'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='0'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='1'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			levelScopes.3='AGGREGATED_SCOPE'
+			levelScopes.4='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='2'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='3'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			levelScopes.3='AGGREGATED_SCOPE'
+			levelScopes.4='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='4'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.format.FormatDefUI
+			ATTR
+			STBVersion=1.0
+			decimalSeparator=','
+			displayDate='1'
+			fixed='true'
+			groupingSeparator='.'
+			infinitySymbol=''
+			maxDecimals='2'
+			minDecimals='2'
+			naNSymbol='NaN'
+			negativeAlignment='4'
+			negativeFormat='-1'
+			negativeStyle='0'
+			representation='0'
+			showGroupingSeparator='true'
+			valueFormatAs='AS_NUMBER'
+			END
+
+			OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.awt.StringStyle, stringStyle
+				ATTR
+				STBVersion=1.0
+				border='0'
+				horizontalAlignment='4'
+				verticalAlignment='0'
+				END
+
+				OBJECT ideasoft.util.syntax.InsetsSTB insets
+					ATTR
+					STBVersion=1.0
+					top='0'
+					left='2'
+					bottom='0'
+					right='2'
+					END
+				END
+
+				OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.awt.FontDescriptor, fontDescriptor
+					ATTR
+					STBVersion=1.0
+					maximumCharWidth='0'
+					name='SansSerif'
+					size='12'
+					style='0'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB background
+					ATTR
+					STBVersion=1.0
+					value='-1'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB foreground
+					ATTR
+					STBVersion=1.0
+					value='-16777216'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB borderColor
+					ATTR
+					STBVersion=1.0
+					value='-16777216'
+					END
+				END
+			END
+
+			OBJECT ideasoft.util.syntax.ColorSTB negativeColor
+				ATTR
+				STBVersion=1.0
+				value='-16777216'
+				END
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.MeasureDefSTB
+		ATTR
+		STBVersion=1.1
+		id='4'
+		name='Cantidad de litros'
+		visible='true'
+		order='1'
+		fieldName='litros'
+		storageType.0='2'
+		scale='0'
+		type='SUM'
+		derivated='false'
+		measureA=''
+		measureB=''
+		description=''
+		nullByDefault='false'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='0'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='1'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			levelScopes.3='AGGREGATED_SCOPE'
+			levelScopes.4='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='2'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='3'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			levelScopes.3='AGGREGATED_SCOPE'
+			levelScopes.4='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='4'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.format.FormatDefUI
+			ATTR
+			STBVersion=1.0
+			decimalSeparator=','
+			displayDate='1'
+			fixed='true'
+			groupingSeparator='.'
+			infinitySymbol=''
+			maxDecimals='2'
+			minDecimals='2'
+			naNSymbol='NaN'
+			negativeAlignment='4'
+			negativeFormat='-1'
+			negativeStyle='0'
+			representation='0'
+			showGroupingSeparator='true'
+			valueFormatAs='AS_NUMBER'
+			END
+
+			OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.awt.StringStyle, stringStyle
+				ATTR
+				STBVersion=1.0
+				border='0'
+				horizontalAlignment='4'
+				verticalAlignment='0'
+				END
+
+				OBJECT ideasoft.util.syntax.InsetsSTB insets
+					ATTR
+					STBVersion=1.0
+					top='0'
+					left='2'
+					bottom='0'
+					right='2'
+					END
+				END
+
+				OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.awt.FontDescriptor, fontDescriptor
+					ATTR
+					STBVersion=1.0
+					maximumCharWidth='0'
+					name='SansSerif'
+					size='12'
+					style='0'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB background
+					ATTR
+					STBVersion=1.0
+					value='-1'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB foreground
+					ATTR
+					STBVersion=1.0
+					value='-16777216'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB borderColor
+					ATTR
+					STBVersion=1.0
+					value='-16777216'
+					END
+				END
+			END
+
+			OBJECT ideasoft.util.syntax.ColorSTB negativeColor
+				ATTR
+				STBVersion=1.0
+				value='-16777216'
+				END
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.MeasureDefSTB
+		ATTR
+		STBVersion=1.1
+		id='5'
+		name='Litros promedio'
+		visible='true'
+		order='2'
+		fieldName='litros'
+		storageType.0='2'
+		storageType.1='0'
+		scale='0'
+		type='AVG'
+		derivated='false'
+		measureA=''
+		measureB=''
+		description=''
+		nullByDefault='false'
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='0'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='1'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			levelScopes.3='AGGREGATED_SCOPE'
+			levelScopes.4='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='2'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='3'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			levelScopes.3='AGGREGATED_SCOPE'
+			levelScopes.4='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.DimensionScopeDefSTB
+			ATTR
+			STBVersion=1.1
+			dimension='4'
+			type='INAGGR_TYPE'
+			levelScopes.0='INPUT_SCOPE'
+			levelScopes.1='AGGREGATED_SCOPE'
+			levelScopes.2='AGGREGATED_SCOPE'
+			END
+		END
+
+		OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.format.FormatDefUI
+			ATTR
+			STBVersion=1.0
+			decimalSeparator=','
+			displayDate='1'
+			fixed='true'
+			groupingSeparator='.'
+			infinitySymbol=''
+			maxDecimals='2'
+			minDecimals='2'
+			naNSymbol='NaN'
+			negativeAlignment='4'
+			negativeFormat='-1'
+			negativeStyle='0'
+			representation='0'
+			showGroupingSeparator='true'
+			valueFormatAs='AS_NUMBER'
+			END
+
+			OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.awt.StringStyle, stringStyle
+				ATTR
+				STBVersion=1.0
+				border='0'
+				horizontalAlignment='4'
+				verticalAlignment='0'
+				END
+
+				OBJECT ideasoft.util.syntax.InsetsSTB insets
+					ATTR
+					STBVersion=1.0
+					top='0'
+					left='2'
+					bottom='0'
+					right='2'
+					END
+				END
+
+				OBJECT com.ideasoft.syntax.IntrospectorSTB ideasoft.util.awt.FontDescriptor, fontDescriptor
+					ATTR
+					STBVersion=1.0
+					maximumCharWidth='0'
+					name='SansSerif'
+					size='12'
+					style='0'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB background
+					ATTR
+					STBVersion=1.0
+					value='-1'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB foreground
+					ATTR
+					STBVersion=1.0
+					value='-16777216'
+					END
+				END
+
+				OBJECT ideasoft.util.syntax.ColorSTB borderColor
+					ATTR
+					STBVersion=1.0
+					value='-16777216'
+					END
+				END
+			END
+
+			OBJECT ideasoft.util.syntax.ColorSTB negativeColor
+				ATTR
+				STBVersion=1.0
+				value='-16777216'
+				END
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.SQLFormatSTB
+		ATTR
+		STBVersion=1.0
+		name='Consulta clientes'
+		description=''
+		qualify='true'
+		verify='true'
+		ignored='false'
+		tuplesByRecord='1'
+		cleanOnUpdate='false'
+		onlyForClean='false'
+		dbName='0'
+		query='select * from clientes;'
+		END
+
+		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
+			ATTR
+			STBVersion=1.0
+			inputSetName='Full'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_cliente'
+			type='TYPE_INTEGER'
+			address='0'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='nombre'
+			type='TYPE_STRING'
+			address='1'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='tipo'
+			type='TYPE_STRING'
+			address='2'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.SQLFormatSTB
+		ATTR
+		STBVersion=1.0
+		name='Consulta ventas'
+		description=''
+		qualify='true'
+		verify='true'
+		ignored='false'
+		tuplesByRecord='1'
+		cleanOnUpdate='false'
+		onlyForClean='false'
+		dbName='0'
+		query='select * from ventas;'
+		END
+
+		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
+			ATTR
+			STBVersion=1.0
+			inputSetName='Full'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_cliente'
+			type='TYPE_INTEGER'
+			address='0'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_vendedor'
+			type='TYPE_INTEGER'
+			address='1'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='litros'
+			type='TYPE_DOUBLE'
+			address='2'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cantidad'
+			type='TYPE_INTEGER'
+			address='3'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_tiempo'
+			type='TYPE_DATE'
+			address='4'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_producto'
+			type='TYPE_INTEGER'
+			address='5'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_region'
+			type='TYPE_INTEGER'
+			address='6'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.SQLFormatSTB
+		ATTR
+		STBVersion=1.0
+		name='Consulta productos'
+		description=''
+		qualify='true'
+		verify='true'
+		ignored='false'
+		tuplesByRecord='1'
+		cleanOnUpdate='false'
+		onlyForClean='false'
+		dbName='0'
+		query='select * from productos;'
+		END
+
+		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
+			ATTR
+			STBVersion=1.0
+			inputSetName='Full'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_producto'
+			type='TYPE_INTEGER'
+			address='0'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='descripcion'
+			type='TYPE_STRING'
+			address='1'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='presentacion'
+			type='TYPE_STRING'
+			address='2'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.SQLFormatSTB
+		ATTR
+		STBVersion=1.0
+		name='Consulta Vendedores'
+		description=''
+		qualify='true'
+		verify='true'
+		ignored='false'
+		tuplesByRecord='1'
+		cleanOnUpdate='false'
+		onlyForClean='false'
+		dbName='0'
+		query='select * from vendedores;'
+		END
+
+		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
+			ATTR
+			STBVersion=1.0
+			inputSetName='Full'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_vendedor'
+			type='TYPE_INTEGER'
+			address='0'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='nombre'
+			type='TYPE_STRING'
+			address='1'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='fecha_ingreso'
+			type='TYPE_DATE'
+			address='2'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='genero'
+			type='TYPE_STRING'
+			address='3'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='fecha_nacimiento'
+			type='TYPE_DATE'
+			address='4'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.SQLFormatSTB
+		ATTR
+		STBVersion=1.0
+		name='Consulta Regiones'
+		description=''
+		qualify='true'
+		verify='true'
+		ignored='false'
+		tuplesByRecord='1'
+		cleanOnUpdate='false'
+		onlyForClean='false'
+		dbName='0'
+		query='select * from regiones;'
+		END
+
+		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
+			ATTR
+			STBVersion=1.0
+			inputSetName='Full'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_region'
+			type='TYPE_INTEGER'
+			address='0'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='estado'
+			type='TYPE_STRING'
+			address='1'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='ciudad'
+			type='TYPE_STRING'
+			address='2'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='region'
+			type='TYPE_STRING'
+			address='3'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.SQLFormatSTB
+		ATTR
+		STBVersion=1.0
+		name='Consulta Tiempo'
+		description=''
+		qualify='true'
+		verify='true'
+		ignored='false'
+		tuplesByRecord='1'
+		cleanOnUpdate='false'
+		onlyForClean='false'
+		dbName='0'
+		query='select distinct cod_tiempo from ventas;'
+		END
+
+		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
+			ATTR
+			STBVersion=1.0
+			inputSetName='Full'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.SQLFieldFormatSTB
+			ATTR
+			STBVersion=1.0
+			name='cod_tiempo'
+			type='TYPE_DATE'
+			address='0'
+			tableKey='false'
+			tableField='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.ModelConfigSTB
+		ATTR
+		STBVersion=1.0
+		END
+
+		OBJECT ideasoft.olap.syntax.RedundancyGroupSTB
+			ATTR
+			STBVersion=1.0
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.GroupSTB
+			ATTR
+			STBVersion=1.0
+			blockSize='4096'
+			minCache='0'
+			maxCache='2000'
+			redundancyEnabled='true'
+			autoRedundancy='false'
+			redundancyStart='0'
+			redundancyEnd='0'
+			redundancyMethod='Topmost'
+			useEstimatedSpace='false'
+			estimatedSpace='0'
+			maxScan='10000'
+			loadingTimePhases='0'
+			buildingTimePhases='999'
+			loadingTimePhasesInc='0'
+			buildingTimePhasesInc='999'
+			deployTimePhases='0'
+			compression='NONE'
+			splitSize='-1'
+			groupClass='ideasoft.olap.config.BuildParams'
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.ISTableGroupSTB
+			ATTR
+			STBVersion=1.0
+			name.0='Full'
+			type.0='Full'
+			downward.0='false'
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.1
+				name='Full'
+				type='Full'
+				downward='true'
+				groupClass='ideasoft.olap.mdm.ISGroup'
+				__unicode='0'
+				__base64='0'
+				END
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.ParamSetDefSTB
+			ATTR
+			STBVersion=1.0
+			controlLer.0='false'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.BuildActionsConfigSTB
+		ATTR
+		STBVersion=1.0
+		END
+
+		OBJECT ideasoft.olap.syntax.BuildActionsTableSTB
+			ATTR
+			STBVersion=1.0
+			result.0=''
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='FULL OK'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='INCREMENTAL OK'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='INVALID GUARD'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='UNAVAILABLE SOURCE'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='INTERRUPTED'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='ERROR'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='NO VALID CONTROLLER'
+				groupClass='ideasoft.olap.config.BuildActionDef'
+				END
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.RetryActionsTableSTB
+			ATTR
+			STBVersion=1.0
+			result.0=''
+			interval.0='0'
+			retries.0='0'
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='INVALID GUARD'
+				interval='0'
+				retries='0'
+				groupClass='ideasoft.olap.config.RetryActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='UNAVAILABLE SOURCE'
+				interval='0'
+				retries='0'
+				groupClass='ideasoft.olap.config.RetryActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='INTERRUPTED'
+				interval='0'
+				retries='0'
+				groupClass='ideasoft.olap.config.RetryActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='ERROR'
+				interval='0'
+				retries='0'
+				groupClass='ideasoft.olap.config.RetryActionDef'
+				END
+			END
+
+			OBJECT ideasoft.olap.syntax.GroupSTB
+				ATTR
+				STBVersion=1.0
+				result='NO VALID CONTROLLER'
+				interval='0'
+				retries='0'
+				groupClass='ideasoft.olap.config.RetryActionDef'
+				END
+			END
+		END
+
+		OBJECT ideasoft.olap.syntax.GroupSTB
+			ATTR
+			STBVersion=1.0
+			groupClass='ideasoft.olap.config.MailerSetup'
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.DBListSTB
+		ATTR
+		STBVersion=1.0
+		END
+
+		OBJECT ideasoft.olap.syntax.DBDefSTB
+			ATTR
+			STBVersion=1.0
+			name='Conexi\u00f3n DW'
+			subProtocol='mysql'
+			dataSource='//localhost/tdc_dw'
+			user='root'
+			pass=''
+			password='EScvxHVl6zM='
+			url='jdbc:mysql://localhost/tdc_dw'
+			driver='com.mysql.jdbc.Driver'
+			verify='false'
+			END
+
+			OBJECT com.ideasoft.syntax.IntrospectorSTB com.ideasoft.datatools.external.sql.DBDefAdvanced
+				ATTR
+				STBVersion=1.0
+				autocommitStr='DRIVER_DEFAULT'
+				fetchSize='0'
+				isolationLevelStr='DRIVER_DEFAULT'
+				END
+			END
+		END
+	END
+
+	OBJECT ideasoft.olap.syntax.ReferenceListSTB
+		ATTR
+		STBVersion=1.0
+		END
+	END
+END

@@ -561,7 +561,7 @@ switch (lower(presentacion)) {
       </output>
     </remotesteps>
     <GUI>
-      <xloc>304</xloc>
+      <xloc>368</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -616,8 +616,8 @@ switch (lower(presentacion)) {
         <stream_name>cod_empleado</stream_name>
       </field>
       <field>
-        <column_name>region</column_name>
-        <stream_name>region</stream_name>
+        <column_name>cod_producto</column_name>
+        <stream_name>cod_producto</stream_name>
       </field>
     </fields>
     <cluster_schema />
@@ -628,7 +628,7 @@ switch (lower(presentacion)) {
       </output>
     </remotesteps>
     <GUI>
-      <xloc>464</xloc>
+      <xloc>528</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -646,16 +646,18 @@ switch (lower(presentacion)) {
     </partitioning>
     <connection>conexion_TDCstaging</connection>
     <sql>SELECT
-cod_cliente, Date(fecha) AS fecha,
-Productos.presentacion as presentacion, cod_empleado, region,
+Ventas.cod_cliente as cod_cliente,
+Date(fecha) AS fecha,
+Productos.presentacion as presentacion,
+cod_empleado,
+Detalle_ventas.cod_producto,
+clientes.cod_region as cod_region,
 SUM(Detalle_ventas.cantidad) AS cantidad
-FROM
-Ventas
-INNER JOIN Detalle_ventas ON
-Ventas.cod_venta = Detalle_ventas.cod_venta
-INNER JOIN Productos ON
-Detalle_ventas.cod_producto = Productos.cod_producto
-GROUP BY 1,2,3,4, 5</sql>
+FROM Ventas
+INNER JOIN clientes ON Ventas.cod_cliente = clientes.cod_cliente
+INNER JOIN Detalle_ventas ON Ventas.cod_venta = Detalle_ventas.cod_venta
+INNER JOIN Productos ON Detalle_ventas.cod_producto = Productos.cod_producto
+GROUP BY 1,2,3,4,5,6</sql>
     <limit>0</limit>
     <lookup />
     <execute_each_row>N</execute_each_row>
