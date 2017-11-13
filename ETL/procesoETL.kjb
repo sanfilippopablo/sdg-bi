@@ -858,15 +858,6 @@ delete from productos;</sql>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Ventas_A_StagingVentas</from>
-      <to>Limpiar_DW</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>Fuentes_A_Staging</from>
       <to>Clientes merge</to>
       <from_nr>0</from_nr>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns5:namedFilters xmlns="http://ns.ideasoft.biz/o3bi/schema/ViewQuery/2011-01" xmlns:ns2="http://ns.ideasoft.biz/o3bi/schema/JOlapQuery/2012-02" xmlns:ns3="http://purl.org/dc/terms" xmlns:ns4="http://ns.ideasoft.biz/common/schema/Common/2012-01" xmlns:ns5="http://ns.ideasoft.biz/o3bi/schema/NamedFilters/2011-01">
+    <ns5:dimensionFilters dimensionName="Vendedores"/>
+</ns5:namedFilters>

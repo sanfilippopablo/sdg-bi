@@ -568,18 +568,21 @@
       <schema_name />
     </partitioning>
     <connection>conexion_TDCstaging</connection>
-    <sql>SELECT
-  fecha
-, stagingventas.cod_cliente as cod_cliente
-, cod_vendedor
-, LitrosEnvase
-, cod_producto,
-clientes.cod_region as cod_region,
-SUM(litrosEnvase * cantidad) AS litros,
-SUM(cantidad) AS cantidad
+    <sql>SELECT stagingventas.fecha AS fecha,
+       stagingventas.cod_cliente AS cod_cliente,
+       stagingventas.cod_vendedor AS cod_vendedor,
+       LitrosEnvase,
+       cod_producto,
+       clientes.cod_region AS cod_region,
+       DATEDIFF(stagingventas.fecha, clientes.fecha_nac) DIV 365 AS edad_cliente,
+       DATEDIFF(stagingventas.fecha, empleados.fecha_nacimiento) DIV 365 AS edad_vendedor,
+       DATEDIFF(stagingventas.fecha, empleados.fecha_ingreso) DIV 365 AS antiguedad_vendedor,
+       SUM(litrosEnvase * cantidad) AS litros,
+       SUM(cantidad) AS cantidad
 FROM stagingventas
+INNER JOIN empleados ON empleados.cod_vendedor = stagingventas.cod_vendedor
 INNER JOIN clientes ON clientes.cod_cliente = stagingventas.cod_cliente
-GROUP BY 1,2,3,4,5,6</sql>
+GROUP BY 1, 2, 3, 4, 5, 6</sql>
     <limit>0</limit>
     <lookup />
     <execute_each_row>N</execute_each_row>
@@ -610,7 +613,7 @@ GROUP BY 1,2,3,4,5,6</sql>
       <schema_name />
     </partitioning>
     <connection>conexion_TDCDW</connection>
-    <schema>tdc_dw</schema>
+    <schema />
     <table>ventas</table>
     <commit>1000</commit>
     <truncate>N</truncate>
@@ -636,10 +639,6 @@ GROUP BY 1,2,3,4,5,6</sql>
         <stream_name>cod_vendedor</stream_name>
       </field>
       <field>
-        <column_name>cod_tiempo</column_name>
-        <stream_name>fecha</stream_name>
-      </field>
-      <field>
         <column_name>litros</column_name>
         <stream_name>litros</stream_name>
       </field>
@@ -648,12 +647,28 @@ GROUP BY 1,2,3,4,5,6</sql>
         <stream_name>cantidad</stream_name>
       </field>
       <field>
+        <column_name>cod_tiempo</column_name>
+        <stream_name>fecha</stream_name>
+      </field>
+      <field>
         <column_name>cod_producto</column_name>
         <stream_name>cod_producto</stream_name>
       </field>
       <field>
         <column_name>cod_region</column_name>
         <stream_name>cod_region</stream_name>
+      </field>
+      <field>
+        <column_name>edad_vendedor</column_name>
+        <stream_name>edad_vendedor</stream_name>
+      </field>
+      <field>
+        <column_name>antiguedad_vendedor</column_name>
+        <stream_name>antiguedad_vendedor</stream_name>
+      </field>
+      <field>
+        <column_name>edad_cliente</column_name>
+        <stream_name>edad_cliente</stream_name>
       </field>
     </fields>
     <cluster_schema />

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?><O3View STBVersion="2.0" _Base64EncodedVersion="''" automaticRanking="false" columnsAsSeries="false" dimensionRenderMode="2" forceNaNsToZero="false" graphType="6" gridOn="false" hasMaxValueAxisY="false" hasMinValueAxisY="false" hasTicValueAxisY="false" invertAxis="false" invertValues="false" lazyReportingMode="false" maxValueAxisY="0.0" measureDefaultFormat="true" minValueAxisY="0.0" percentageSeries="false" percentageX="false" reportingMode="false" showLienarRegressionInfo="false" showLinearRegression="false" showNaN="false" showTitle="true" showValues="false" showZeros="false" ticValueAxisY="0.0" totalSeries="false" totalX="false" zeroAdjust="2">
+<headerAndFooterModel STBVersion="1.0" footerSeparator="true" headerSeparator="true" useDefaultFooter="true" useDefaultHeader="true">
+<footerObjects STBVersion="1.0" horizontalPosition="0" text="Ultima Actualización: %CubeDate%" verticalPosition="3">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="1" verticalPosition="3">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="2" text="Página %Page% of %PageCount%" verticalPosition="3">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="0" verticalPosition="1">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="1" verticalPosition="1">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="2" verticalPosition="1">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="0" verticalPosition="4">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="1" verticalPosition="4">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<footerObjects STBVersion="1.0" horizontalPosition="2" verticalPosition="4">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</footerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="0" text="Nombre del Cubo: %cubeName%" verticalPosition="3">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="1" verticalPosition="3">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="2" verticalPosition="3">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="0" verticalPosition="1">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="1" verticalPosition="1">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="2" verticalPosition="1">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="0" text="URL del Cubo: %cubeURL%" verticalPosition="4">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="1" verticalPosition="4">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+<headerObjects STBVersion="1.0" horizontalPosition="2" text="Fecha de Impresión: %CurrentDate%" verticalPosition="4">
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="SansSerif" size="8" style="0"/>
+<textColor STBVersion="1.0" value="-16777216"/>
+</headerObjects>
+</headerAndFooterModel>
+<pageInfo STBVersion="1.0" bottomMargin="1.0" leftMargin="1.0" orientation="0" paperSize="0" rightMargin="1.0" topMargin="1.0"/>
+<analisisView STBVersion="1.0" cubeURL="file:/C:/sdg-bi/TDC Ventas.cube" detailsLevel="0" showRuleExceptions="false" twoMeasures="false">
+<gridView STBVersion="1.0" printHorizontalAxis="false" printVerticalAxis="false" sortedDimension="-1" swapped="false">
+<YAxisNodeStatus STBVersion="1.0" allItemSize="15" itemCount="3" total="false"/>
+<dimensionStatusView STBVersion="1.0" dimensionName="Clientes">
+<dimensionStatus STBVersion="1.0" dimLevelsCount="1" dimension="0" horizButtonWidth="0" horizLevelLength="0" percentMode="false" sorting="false" totalMode="false" vertLevelLength="0">
+<horizDimLevelButtonWidth.0 value="62"/>
+<horizDimLevelLength.0 value="15"/>
+<vertDimLevelLength.0 value="62"/>
+</dimensionStatus>
+</dimensionStatusView>
+<dimensionStatusView STBVersion="1.0" dimensionName="Tiempo">
+<dimensionStatus STBVersion="1.0" dimLevelsCount="1" dimension="1" horizButtonWidth="0" horizLevelLength="0" percentMode="false" sorting="false" totalMode="false" vertLevelLength="0">
+<horizDimLevelButtonWidth.0 value="71"/>
+<horizDimLevelLength.0 value="15"/>
+<vertDimLevelLength.0 value="125"/>
+</dimensionStatus>
+</dimensionStatusView>
+<dimensionStatusView STBVersion="1.0" dimensionName="Vendedores">
+<dimensionStatus STBVersion="1.0" dimLevelsCount="1" dimension="2" horizButtonWidth="0" horizLevelLength="0" percentMode="false" sorting="false" totalMode="false" vertLevelLength="0">
+<horizDimLevelButtonWidth.0 value="85"/>
+<horizDimLevelLength.0 value="15"/>
+<vertDimLevelLength.0 value="131"/>
+</dimensionStatus>
+</dimensionStatusView>
+<dimensionStatusView STBVersion="1.0" dimensionName="Regiones">
+<dimensionStatus STBVersion="1.0" dimLevelsCount="1" dimension="3" horizButtonWidth="0" horizLevelLength="0" percentMode="false" sorting="false" totalMode="false" vertLevelLength="0">
+<horizDimLevelButtonWidth.0 value="68"/>
+<horizDimLevelLength.0 value="15"/>
+<vertDimLevelLength.0 value="113"/>
+</dimensionStatus>
+</dimensionStatusView>
+<dimensionStatusView STBVersion="1.0" dimensionName="Productos">
+<dimensionStatus STBVersion="1.0" dimLevelsCount="1" dimension="4" horizButtonWidth="0" horizLevelLength="0" percentMode="false" sorting="false" totalMode="false" vertLevelLength="0">
+<horizDimLevelButtonWidth.0 value="92"/>
+<horizDimLevelLength.0 value="15"/>
+<vertDimLevelLength.0 value="156"/>
+</dimensionStatus>
+</dimensionStatusView>
+<dimensionStatusView STBVersion="1.0" dimensionName="&lt;measures&gt;">
+<dimensionStatus STBVersion="1.0" dimLevelsCount="1" dimension="5" horizButtonWidth="0" horizLevelLength="0" percentMode="false" sorting="false" totalMode="false" vertLevelLength="0">
+<horizDimLevelButtonWidth.0 value="62"/>
+<horizDimLevelLength.0 value="15"/>
+<vertDimLevelLength.0 value="117"/>
+</dimensionStatus>
+</dimensionStatusView>
+<sizeInfo STBVersion="1.0" buttonsHeight="19" defaultHorizLeafSize="39" defaultVertLeafSize="15" subLevelButtonsHeight="16">
+<defaultHorizLeafSizeByLevel.0 value="39"/>
+</sizeInfo>
+<sizeBounds STBVersion="1.0" initialSizeAsAverage="true" maxButtonWidth="350" maxHorizLeafCharSize="100" maxVertLevelCharLength="100" minButtonWidth="35" minButtonsHeight="14" minHorizLeafSize="35" minHorizLevelLength="14" minVertLeafSize="14" minVertLevelLength="35" optimalAdjust="true" recalcSize="true" sizeCalcMode="0" useData="true"/>
+<XAxisNodeStatus STBVersion="1.0" allItemSize="65" itemCount="5" total="false"/>
+<gridDef STBVersion="1.0" specificVertAxisAlignment="2" useSpecificVertAxisAlignment="true">
+<specialTableCellStringStyle STBVersion="1.0" border="0" horizontalAlignment="4" verticalAlignment="0">
+<background STBVersion="1.0" value="-16751002"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-1"/>
+<selectedBackground STBVersion="1.0" value="-9013642"/>
+</specialTableCellStringStyle>
+<tableCellStringStyle STBVersion="1.0" border="0" horizontalAlignment="4" verticalAlignment="0">
+<background STBVersion="1.0" value="-1"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="8" name="Dialog" size="11" style="0"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-16777216"/>
+<selectedBackground STBVersion="1.0" value="-9013642"/>
+</tableCellStringStyle>
+<specialAxisNodeStringStyle STBVersion="1.0" border="0" horizontalAlignment="0" verticalAlignment="0">
+<background STBVersion="1.0" value="-16751002"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-1"/>
+<selectedBackground STBVersion="1.0" value="-9013642"/>
+</specialAxisNodeStringStyle>
+<axisNodeStringStyle STBVersion="1.0" border="0" horizontalAlignment="0" verticalAlignment="0">
+<background STBVersion="1.0" value="-16750951"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="8" name="Dialog" size="11" style="0"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-1"/>
+<selectedBackground STBVersion="1.0" value="-9013642"/>
+</axisNodeStringStyle>
+<dataSpecialNodeStringStyle STBVersion="1.0" border="0" horizontalAlignment="0" verticalAlignment="0">
+<background STBVersion="1.0" value="-3631486"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-1"/>
+<selectedBackground STBVersion="1.0" value="-3636646"/>
+</dataSpecialNodeStringStyle>
+<gridBackground STBVersion="1.0" value="-8355712"/>
+<specialAxisButtonStringStyle STBVersion="1.0" border="0" horizontalAlignment="0" verticalAlignment="0">
+<background STBVersion="1.0" value="-6750208"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="1"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="11" name="Dialog" size="11" style="1"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-1"/>
+<selectedBackground STBVersion="1.0" value="-6750208"/>
+</specialAxisButtonStringStyle>
+<axisButtonStringStyle STBVersion="1.0" border="0" horizontalAlignment="0" verticalAlignment="0">
+<background STBVersion="1.0" value="-6750208"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="1"/>
+<borderColor STBVersion="1.0" value="-16777216"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-1"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="11" name="Dialog" size="11" style="1"/>
+<selectedBorderColor STBVersion="1.0" value="-16777216"/>
+<foreground STBVersion="1.0" value="-1"/>
+<selectedBackground STBVersion="1.0" value="-6750208"/>
+</axisButtonStringStyle>
+<gridColor STBVersion="1.0" value="-16777216"/>
+<minCellDimension STBVersion="1.0" height="14" width="35"/>
+<highlightColor STBVersion="1.0" value="-587202710"/>
+<formatDefUI STBVersion="1.0" decimalSeparator="," displayDate="1" fixed="true" groupingSeparator="." infinitySymbol="" maxDecimals="2" minDecimals="2" naNSymbol="NaN" negativeAlignment="4" negativeFormat="-1" negativePrefix="-" negativeStyle="2" negativeSuffix="" representation="0" showGroupingSeparator="true" valueFormatAs="AS_NUMBER">
+<stringStyle STBVersion="1.0" border="0" horizontalAlignment="4" verticalAlignment="0">
+<background STBVersion="1.0" value="-1"/>
+<selectedFontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<borderColor STBVersion="1.0" value="-4144960"/>
+<insets STBVersion="1.0" bottom="0" left="2" right="2" top="0"/>
+<selectedForeground STBVersion="1.0" value="-16777216"/>
+<fontDescriptor STBVersion="1.0" maximumCharWidth="0" name="Dialog" size="11" style="0"/>
+<selectedBorderColor STBVersion="1.0" value="-4144960"/>
+<foreground STBVersion="1.0" value="-16777216"/>
+<selectedBackground STBVersion="1.0" value="-9013642"/>
+</stringStyle>
+<negativeColor STBVersion="1.0" value="-16777216"/>
+</formatDefUI>
+</gridDef>
+<axisStatus STBVersion="1.0" percentMode="false" totalMode="false"/>
+<axisStatus STBVersion="1.0" percentMode="false" totalMode="false"/>
+</gridView>
+<dimensionLevelControllerView STBVersion="1.0"/>
+<JOlapCubeView>
+<cubeView automaticRankings="false" lazyReportingMode="false">
+<ordinateEdge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="edge-view-impl">
+<dimensionView xsi:type="dimension-view-impl">
+<dimension name="Clientes" xsi:type="dimension-impl"/>
+<dimensionStepManager xsi:type="dimension-step-manager-impl">
+<level-filter-impl xsi:type="java:com.ideasoft.o3.olap.query.LevelFilterImpl">
+<set-action value=" INITIAL" xsi:type="set-action-type-enum"/>
+<level name="cliente" xsi:type="level-impl"/>
+</level-filter-impl>
+<ranking-member-filter-impl ascending="false" based-on-accumulation="false" based-on-labels="false" show-others="false" xsi:type="java:com.ideasoft.o3.olap.query.RankingMemberFilterImpl">
+<type value=" TOP" xsi:type="ranking-type-enum"/>
+<set-action value=" APPEND" xsi:type="set-action-type-enum"/>
+<input xsi:type="java:com.ideasoft.o3.olap.query.QualifiedMemberReferenceImpl">
+<data-based-member-filter ascending="false" based-on-accumulation="false" based-on-labels="false" show-others="false" xsi:type="java:com.ideasoft.o3.olap.query.RankingMemberFilterImpl">
+<type value=" TOP" xsi:type="ranking-type-enum"/>
+<set-action value=" APPEND" xsi:type="set-action-type-enum"/>
+<based-on-percent>false</based-on-percent>
+<top>5</top>
+</data-based-member-filter>
+<member dimensionName="&lt;measures&gt;" xsi:type="member-impl">
+<pathElement>&lt;measures&gt;</pathElement>
+<pathElement>Cantidad productos</pathElement>
+</member>
+</input>
+<based-on-percent>false</based-on-percent>
+<top>5</top>
+</ranking-member-filter-impl>
+</dimensionStepManager>
+</dimensionView>
+<suppress-ordinate-member-filter-impl suppressNaNsEnabled="true" suppressNullsEnabled="true" suppressZerosEnabled="true"/>
+</ordinateEdge>
+<ordinateEdge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="edge-view-impl">
+<dimensionView xsi:type="dimension-view-impl">
+<dimension name="Tiempo" xsi:type="dimension-impl"/>
+<dimensionStepManager xsi:type="dimension-step-manager-impl">
+<drill>
+<setActionType value=" INITIAL" xsi:type="set-action-type-enum"/>
+<member xsi:type="member-impl">
+<pathElement>Tiempo</pathElement>
+<pathElement>2009</pathElement>
+</member>
+<drillType value=" CHILDREN" xsi:type="drill-type-enum"/>
+</drill>
+</dimensionStepManager>
+</dimensionView>
+<suppress-ordinate-member-filter-impl suppressNaNsEnabled="true" suppressNullsEnabled="true" suppressZerosEnabled="true"/>
+</ordinateEdge>
+<pageEdge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="edge-view-impl">
+<dimensionView xsi:type="dimension-view-impl">
+<dimension name="Vendedores" xsi:type="dimension-impl"/>
+<dimensionStepManager xsi:type="dimension-step-manager-impl">
+<compound-dimension-step-impl name="Compound_2">
+<drill>
+<setActionType value=" INITIAL" xsi:type="set-action-type-enum"/>
+<member xsi:type="member-impl">
+<pathElement>Vendedores</pathElement>
+</member>
+<drillType value=" CHILDREN" xsi:type="drill-type-enum"/>
+</drill>
+</compound-dimension-step-impl>
+</dimensionStepManager>
+</dimensionView>
+<dimensionView xsi:type="dimension-view-impl">
+<dimension name="Regiones" xsi:type="dimension-impl"/>
+<dimensionStepManager xsi:type="dimension-step-manager-impl">
+<compound-dimension-step-impl name="Compound_3">
+<drill>
+<setActionType value=" INITIAL" xsi:type="set-action-type-enum"/>
+<member xsi:type="member-impl">
+<pathElement>Regiones</pathElement>
+</member>
+<drillType value=" CHILDREN" xsi:type="drill-type-enum"/>
+</drill>
+</compound-dimension-step-impl>
+</dimensionStepManager>
+</dimensionView>
+<dimensionView xsi:type="dimension-view-impl">
+<dimension name="Productos" xsi:type="dimension-impl"/>
+<dimensionStepManager xsi:type="dimension-step-manager-impl">
+<compound-dimension-step-impl name="Compound_4">
+<drill>
+<setActionType value=" INITIAL" xsi:type="set-action-type-enum"/>
+<member xsi:type="member-impl">
+<pathElement>Productos</pathElement>
+</member>
+<drillType value=" CHILDREN" xsi:type="drill-type-enum"/>
+</drill>
+</compound-dimension-step-impl>
+</dimensionStepManager>
+</dimensionView>
+<dimensionView xsi:type="dimension-view-impl">
+<dimension name="&lt;measures&gt;" xsi:type="dimension-impl"/>
+<dimensionStepManager xsi:type="dimension-step-manager-impl">
+<singleMemberFilter>
+<setActionType value=" INITIAL" xsi:type="set-action-type-enum"/>
+<member xsi:type="member-impl">
+<pathElement>&lt;measures&gt;</pathElement>
+<pathElement>Cantidad productos</pathElement>
+</member>
+</singleMemberFilter>
+</dimensionStepManager>
+</dimensionView>
+</pageEdge>
+</cubeView>
+</JOlapCubeView>
+</analisisView>
+<info STBVersion="1.0" author="" category="" creationDate="02/11/2017" description="" keys="" modifiedBy="" modifiedDate="02/11/2017" modifiedTimeStr="1509662295481" offset="0" organization="" predSName.DName="" predSName.URL="" revisionDate="02/11/2017" sName.DName="" sName.URL="" theme="" title="" type="View"/>
+</O3View>
