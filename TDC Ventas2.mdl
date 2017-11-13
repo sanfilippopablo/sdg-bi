@@ -1346,7 +1346,7 @@ OBJECT ideasoft.olap.syntax.CubeDefSTB
 		cleanOnUpdate='false'
 		onlyForClean='false'
 		dbName='0'
-		query='select * from ventas2;'
+		query='select * from ventas;'
 		END
 
 		OBJECT ideasoft.olap.syntax.ExternalFormatSourceSTB
@@ -1680,7 +1680,7 @@ OBJECT ideasoft.olap.syntax.CubeDefSTB
 			dataSource='//localhost/tdc_dw'
 			user='root'
 			pass=''
-			password='EScvxHVl6zM='
+			password='7Kz+bJOobEw='
 			url='jdbc:mysql://localhost/tdc_dw'
 			driver='com.mysql.jdbc.Driver'
 			verify='false'
